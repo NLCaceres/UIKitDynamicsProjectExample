@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         let ballXValue = Int(arc4random_uniform(176) + 25)
         let newBallView = UIView(frame: CGRect(x: ballXValue, y: 40, width: 50, height: 50))
         newBallView.layer.cornerRadius = 25
-        newBallView.backgroundColor = UIColor.redColor()
+        newBallView.backgroundColor = .red
         self.view.addSubview(newBallView)
         gravityBehavior.addItem(newBallView)
         collisionBehavior.addItem(newBallView)
